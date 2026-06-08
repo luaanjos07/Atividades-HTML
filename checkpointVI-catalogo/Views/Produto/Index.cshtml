@@ -1,0 +1,40 @@
+@{
+    ViewBag.Title = "Catálogo de Produtos";
+    var nomes = ViewBag.Nomes as List<string> ?? new List<string>();
+    var precos = ViewBag.Precos as List<decimal> ?? new List<decimal>();
+}
+
+<h1>@ViewBag.Title</h1>
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < nomes.Count; i++)
+        {
+            var preco = i < precos.Count ? precos[i] : 0m;
+
+            if (preco > 0)
+            {
+                <tr style="color: green;">
+                    <td>@(i + 1)</td>
+                    <td>@nomes[i]</td>
+                    <td>@preco.ToString("C", new System.Globalization.CultureInfo("pt-BR"))</td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@nomes[i]</td>
+                    <td>@preco.ToString("C", new System.Globalization.CultureInfo("pt-BR"))</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

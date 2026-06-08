@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .menu {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .menu a.ativo {
+            color: #007bff;
+        }
+
+        .box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 320px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        #numero {
+            font-size: 80px;
+            margin: 20px 0;
+            color: black; /* padrão inicial */
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .linha-botoes {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        #btnIncrementar {
+            background-color: #28a745;
+            color: white;
+        }
+
+        #btnIncrementar:hover {
+            background-color: #218838;
+        }
+
+        #btnDecrementar {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        #btnDecrementar:hover {
+            background-color: #c82333;
+        }
+
+        #btnZerar {
+            background-color: #6c757d;
+            color: white;
+            flex: none;
+        }
+
+        #btnZerar:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="validacao.html">1. Validação</a>
+        <a href="contador.html" class="ativo">2. Contador</a>
+    </div>
+
+    <div class="box">
+        <h2>Contador Interativo</h2>
+        <p style="color: #666; font-size: 14px;">Use os botões para controlar o número</p>
+        
+        <h1 id="numero">0</h1>
+
+        <div class="botoes">
+            <div class="linha-botoes">
+                <button id="btnDecrementar">Decrementar</button>
+                <button id="btnIncrementar">Incrementar</button>
+            </div>
+            <button id="btnZerar">Zerar</button>
+        </div>
+    </div>
+    <script src="contador.js"></script>
+</body>
+</html>

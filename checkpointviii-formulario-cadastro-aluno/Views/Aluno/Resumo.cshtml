@@ -1,0 +1,46 @@
+@model checkpointVIII_FORMULARIO_CADASTRO_ALUNO.Models.Aluno
+
+@{
+    ViewData["Title"] = "Resumo de Cadastro";
+}
+
+<h1>Resumo de Cadastro</h1>
+<div class="alert alert-info">Os dados foram recebidos pelo servidor e enriquecidos com endereço via CEP.</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Nome</dt>
+            <dd class="col-sm-9">@Model.Nome</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">RA</dt>
+            <dd class="col-sm-9">@Model.RA</dd>
+
+            <dt class="col-sm-3">Curso</dt>
+            <dd class="col-sm-9">@Model.Curso</dd>
+
+            <dt class="col-sm-3">Data de Nascimento</dt>
+            <dd class="col-sm-9">@Model.DataNascimento.ToString("yyyy-MM-dd")</dd>
+
+            <dt class="col-sm-3">CEP</dt>
+            <dd class="col-sm-9">@Model.CEP</dd>
+
+            <dt class="col-sm-3">Logradouro</dt>
+            <dd class="col-sm-9">@Model.Logradouro</dd>
+
+            <dt class="col-sm-3">Bairro</dt>
+            <dd class="col-sm-9">@Model.Bairro</dd>
+
+            <dt class="col-sm-3">Cidade</dt>
+            <dd class="col-sm-9">@Model.Cidade</dd>
+
+            <dt class="col-sm-3">UF</dt>
+            <dd class="col-sm-9">@Model.UF</dd>
+        </dl>
+    </div>
+</div>
+
+<a asp-action="Cadastrar" class="btn btn-secondary">Voltar ao cadastro</a>

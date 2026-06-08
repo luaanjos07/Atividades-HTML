@@ -1,0 +1,30 @@
+@model checkpointx_sistemadebuscadeendereco.Models.Endereco
+
+@{
+    ViewData["Title"] = "Resumo do Endereço";
+}
+
+<h1>Resumo do Endereço</h1>
+<div class="alert alert-info">Os dados foram recebidos pelo servidor e exibidos em modo somente leitura.</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">CEP</dt>
+            <dd class="col-sm-9">@Model.CEP</dd>
+
+            <dt class="col-sm-3">Logradouro</dt>
+            <dd class="col-sm-9">@Model.Logradouro</dd>
+
+            <dt class="col-sm-3">Bairro</dt>
+            <dd class="col-sm-9">@Model.Bairro</dd>
+
+            <dt class="col-sm-3">Cidade</dt>
+            <dd class="col-sm-9">@Model.Cidade</dd>
+
+            <dt class="col-sm-3">UF</dt>
+            <dd class="col-sm-9">@Model.UF</dd>
+        </dl>
+    </div>
+</div>
+<a asp-action="Index" class="btn btn-secondary">Voltar</a>

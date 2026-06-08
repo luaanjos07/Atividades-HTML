@@ -1,0 +1,6 @@
+{
+  "name": "Validação de Formulário",
+  "description": "Um formulário simples com validação em JavaScript utilizando conceitos de primeiro semestre.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
