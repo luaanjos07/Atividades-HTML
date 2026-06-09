@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("checkpointVIII-FORMULARIO-CADASTRO-ALUNO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+320310229c73b477899f1962ee3fd7a823531b62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d6315bbfdb73d8544bbb5e92da47a78e0856451")]
 [assembly: System.Reflection.AssemblyProductAttribute("checkpointVIII-FORMULARIO-CADASTRO-ALUNO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("checkpointVIII-FORMULARIO-CADASTRO-ALUNO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
